@@ -1,4 +1,5 @@
 
+
 :root {
   --color-principal: #324856;
   --color-secundario: #4A746A;
@@ -14,17 +15,17 @@ body {
   color: var(--color-texto);
 }
 
-header, .materia {
+header {
   background-color: var(--color-secundario);
   color: var(--color-texto);
 }
 
-nav {
+nav{
   background-color: var(--color-acento);
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 60px 0;
+  padding: 150px 1%;
 }
 
 nav a, #b1, #b2, #b3, #b4, #a1 {
@@ -45,19 +46,6 @@ nav a, #b1, #b2, #b3, #b4, #a1 {
   display: inline-block;
 }
 
-nav a:hover, #b1:hover, #b2:hover, #b3:hover, #b4:hover, #a1:hover {
-  background-color: var(--color-boton-hover);
-  color: var(--color-texto);
-  box-shadow: 0 2px 4px rgba(50,72,86,0.2) inset;
-  transform: translateY(2px);
-}
-
-footer {
-  background-color: var(--color-principal);
-  color: var(--color-texto);
-  text-align: center;
-  padding: 40px;
-}
 #b1:hover, #b2:hover, #b3:hover, #b4:hover,
 #b1:active, #b2:active, #b3:active, #b4:active {
   background-color: var(--color-acento);
@@ -65,6 +53,15 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
   transform: translateY(2px);
 }
+
+
+footer {
+  background-color: var(--color-principal);
+  color: var(--color-texto);
+  text-align: center;
+  padding: 40px;
+}
+
 
 #b1, #b2, #b3, #b4 {
   background-color: var(--color-casilla);
@@ -111,5 +108,36 @@ footer {
 }
 
 
+/* Adaptabilidad para dispositivos */
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 0;
+  }
+  nav a, #b1, #b2, #b3, #b4, #a1, #a2, #a3, #a4, #a5, #a6, #feo {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
 
+@media (max-width: 600px) {
+  header, .materia, footer {
+    padding: 10px;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  nav {
+    gap:30px;
+    padding: 60px 0;
+  }
+  nav a, #b1, #b2, #b3, #b4, #a1 {
+    font-size: 15px;
+    padding: 12px 0;
+  }
+}
 
