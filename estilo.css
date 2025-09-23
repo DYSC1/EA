@@ -110,36 +110,6 @@ footer {
   transform: translateY(2px);
 }
 
-/* Adaptabilidad para dispositivos */
-@media (max-width: 900px) {
-  nav {
-    flex-direction: column;
-    gap: 15px;
-    padding: 30px 0;
-  }
-  nav a, #b1, #b2, #b3, #b4, #a1, #a2, #a3, #a4, #a5, #a6, #feo {
-    width: 100%;
-    margin: 10px 0;
-    font-size: 15px;
-    padding: 10px 0;
-  }
-}
 
-@media (max-width: 600px) {
-  header, .materia, footer {
-    padding: 10px;
-    font-size: 15px;
-  }
-  h1 {
-    font-size: 1.3em;
-  }
-  nav {
-    gap:30px;
-    padding: 60px 0;
-  }
-  nav a, #b1, #b2, #b3, #b4, #a1 {
-    font-size: 15px;
-    padding: 12px 0;
-  }
-}
+
 
