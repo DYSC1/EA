@@ -1,0 +1,55 @@
+#b1:hover, #b2:hover, #b3:hover, #b4:hover,
+#b1:active, #b2:active, #b3:active, #b4:active {
+  background-color: #800000;
+  color: #ffd700;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) inset;
+  transform: translateY(2px);
+}
+:root{
+  --color-casilla: #ffd700;
+  --color-letra-periodo: #800000;
+}
+
+#b1, #b2, #b3, #b4 {
+  background-color: var(--color-casilla);
+  color: var(--color-letra-periodo);
+  border: 2px solid var(--color-letra-periodo);
+  border-radius: 10px;
+  padding: 10px 24px;
+  margin: auto;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s, color 0.2s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+#a1, #a2, #a3, #a4, #a5, #a6 {
+  background-color: var(--color-casilla);
+  color: var(--color-letra-periodo);
+  border: 2px solid var(--color-letra-periodo);
+  border-radius: 10px;
+  padding: 10px 24px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s, color 0.2s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#a1:hover, #a2:hover, #a3:hover, #a1:active, #a2:active, #a3:active, #a4:active, #a5:active, #a6:active {
+  background-color: #800000;
+  color: #ffd700;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) inset;
+  transform: translateY(2px);
+}
