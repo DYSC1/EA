@@ -1,46 +1,46 @@
 
 
+
 :root {
-  --color-principal: #324856;
+  --color-principal:#800000;
   --color-secundario: #4A746A;
-  --color-acento: #D18237;
+  --color-acento: #ffffff;
   --color-boton: #D66C44;
   --color-boton-hover: #4A746A;
-  --color-texto: #fff;
+  --color-texto: #000000;
   --color-texto-boton: #324856;
 }
 
 body {
-  background-color: var(--color-principal);
+  background-image: url(image.png);
   color: var(--color-texto);
 }
 
 header {
-  background-color: var(--color-secundario);
   color: var(--color-texto);
 }
 
 nav{
-  background-color: var(--color-acento);
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 150px 1%;
+  padding: 75px 1px;
 }
+/* Estilo de los enlaces de navegacion */
 
-nav a, #b1, #b2, #b3, #b4, #a1 {
+#b1, #b2, #b3, #b4 {
   background-color: var(--color-texto);
-  color: var(--color-texto);
-  border: 2px solid var(--color-texto);
-  border-radius: 10px;
-  padding: 12px 28px;
-  margin: 0 10px;
+  color: var(--color-acento);
+  border: 2px solid var(--color-letra-periodo);
+  border-radius: 30px;
+  padding: 30px 40px;
+  margin: auto;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(50,72,86,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: box-shadow 0.2s, transform 0.2s, background 0.2s, color 0.2s;
   cursor: pointer;
   display: inline-block;
@@ -54,22 +54,27 @@ nav a, #b1, #b2, #b3, #b4, #a1 {
   transform: translateY(2px);
 }
 
-
+/*estilo de los creditos*/
 footer {
-  background-color: var(--color-principal);
   color: var(--color-texto);
   text-align: center;
   padding: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+
 }
 
 
-#b1, #b2, #b3, #b4 {
-  background-color: var(--color-casilla);
-  color: var(--color-texto);
+
+/*estilo de los botones de periodos*/
+
+ #a2, #a3, #a4, #a5, #c1, #c2, #c3, #c4, #c5, #c6, #d1, #d2, #d3, #d4, #d5, #e1, #e2, #e3, #e4{
+  background-color: var(--color-texto);
+  color: var(--color-acento);
   border: 2px solid var(--color-letra-periodo);
   border-radius: 10px;
-  padding: 10px 24px;
-  margin: auto;
+  padding: 20px 70px;
+  margin: 0 10px;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
@@ -80,14 +85,12 @@ footer {
   cursor: pointer;
   display: inline-block;
 }
-
-
-#a1 {
-  background-color: var(--color-casilla);
-  color: var(--color-letra-periodo);
+#a1{
+  background-color: var(--color-texto);
+  color: var(--color-acento);
   border: 2px solid var(--color-letra-periodo);
   border-radius: 10px;
-  padding: 10px 24px;
+  padding: 20px 200px;
   margin: 0 10px;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
@@ -100,26 +103,53 @@ footer {
   display: inline-block;
 }
 
-#a1:hover,  #a1:active {
+#a1:hover, #a2:hover, #a3:hover, #a4:hover, #a5:hover, #c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover, #d1:hover, #d2:hover, #d3:hover, #d4:hover, #d5:hover, #e1:hover, #e2:hover, #e3:hover, #e4:hover #a1:active {
   background-color:var(--color-acento);
   color:var(--color-texto);
   box-shadow: 0 2px 4px rgba(0,0,0,0.2) inset;
   transform: translateY(2px);
 }
 
+/* Centrar y alinear automáticamente los botones de video */
+.videos-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+/* Centrar los títulos de los temas */
+.tema-titulo {
+  display: block;
+  text-align: center;
+  margin: 16px 0 8px 0;
+  font-size: 20px;
+}
+
+
 
 /* Adaptabilidad para dispositivos */
 @media (max-width: 900px) {
   nav {
     flex-direction: column;
-    gap: 15px;
-    padding: 30px 0;
+    gap: 30px;
+    padding: 40px 50px;
   }
-  nav a, #b1, #b2, #b3, #b4, #a1, #a2, #a3, #a4, #a5, #a6, #feo {
+  nav a, #a1, #a2, #a3, #a4, #a5, #c1, #c2, #c3, #c4, #c5, #c6, #d1, #d2, #d3, #d4, #d5, #e1, #e2, #e3, #e4 {
     width: 100%;
     margin: 10px 0;
-    font-size: 15px;
-    padding: 10px 0;
+    font-size: 17px;
+    padding: 5px 25px;
+    
+  }
+
+  nav a, #b1, #b2, #b3, #b4 {
+
+    margin: 10px px;
+    font-size: 17px;
+    padding: 10px 1px;
+    
+
   }
 }
 
@@ -135,9 +165,20 @@ footer {
     gap:30px;
     padding: 60px 0;
   }
-  nav a, #b1, #b2, #b3, #b4, #a1 {
+  nav a, #b1, #b2, #b3, #b4, #a1, #a2, #a3, #a4, #a5, #c1, #c2, #c3, #c4, #c5, #c6, #d1, #d2, #d3, #d4, #d5, #e1, #e2, #e3, #e4 {
     font-size: 15px;
     padding: 12px 0;
+  } 
+ /* Adaptación de videos para móvil */
+  .videos-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  nav > div[style*="gap: 10px"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
   }
 }
 
